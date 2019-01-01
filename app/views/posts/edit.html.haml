@@ -1,0 +1,11 @@
+.text-center
+    = image_tag @post.image.url(:medium)
+.form-wrapper
+    = simple_form_for @post, html: { class: 'form-horizontal', multipart: true } do |f|
+        .form-group
+            = f.input :image
+        .form-group.text-center	
+            %label.control-label{for: "caption"} Caption
+            %input#caption.form-control.input-md{name: "caption", type: "text"}/
+        .form-group.text-center
+            = f.button :submit, class: 'btn btn-success'
