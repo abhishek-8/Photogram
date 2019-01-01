@@ -3,7 +3,7 @@
         .form-group
             = f.input :image
         .form-group.text-center	
-            %label.control-label{for: "caption"} Caption
-            %input#caption.form-control.input-md{name: "caption", type: "text"}/
+            %label.control-label{for: "post_caption"} Caption
+            %input#post_caption.form-control.input-md{name: "post[caption]", type: "text"}/
         .form-group.text-center
             = f.button :submit, class: 'btn btn-success'
