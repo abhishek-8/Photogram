@@ -1,9 +1,1 @@
-.form-wrapper
-    = simple_form_for @post, html: { class: 'form-horizontal', multipart: true } do |f|
-        .form-group
-            = f.input :image
-        .form-group.text-center	
-            %label.control-label{for: "post_caption"} Caption
-            %input#post_caption.form-control.input-md{name: "post[caption]", type: "text"}/
-        .form-group.text-center
-            = f.button :submit, class: 'btn btn-success'
+= render 'form'
